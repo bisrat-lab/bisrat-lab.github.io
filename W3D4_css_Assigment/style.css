@@ -1,0 +1,40 @@
+body{
+    background-color:rgb(237, 223, 206);
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+h1{
+    font-size: 24px;
+    text-align: center;
+    color:chocolate;
+    text-decoration: underline;
+
+}
+h3{
+    font-size: 18px;
+    color:chocolate;
+}
+a{
+    color:peru;
+    text-decoration: none;
+    text-decoration: darkslateblue;
+}
+a:hover{
+    color:rgb(247, 72, 8);
+}
+
+.textEffect{
+    color:brown;
+}
+#textEffect2{
+    color: tomato;
+}
+#imgBorder{
+    border: peru solid;
+}
+.droupcup{
+    font-size: 30px;
+}
+#imgBorder:hover{
+    border: orangered solid 5px;
+}
