@@ -1,0 +1,26 @@
+1. What are the possible ways a HTML document gets its style? List them in ascending
+order of precedence
+Inline - by using the style attribute inside HTML elements.
+Internal - by using a <style> element in the <head> section.
+External - by using a <link> element to link to an external CSS file.
+
+2. What is the use of HTML id and class attributes?
+=>is useful for applying styles and manipulating an element
+
+3. 
+
+.fontColor{
+font-family: arial
+color: black;
+}
+p {
+background-color: yellow
+}
+h1{
+font-size: 10px
+}
+4.
+
+
+id 
+element
