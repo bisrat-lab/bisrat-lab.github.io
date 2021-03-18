@@ -1,3 +1,33 @@
 body{
     background-color: silver;
+    margin-top: 0ch;
+    margin-left: 0px;
+    margin-right: 0pt;
+}
+.profile{
+    background-color:royalblue;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+ 
+}
+img{
+    border-radius: 50%;
+    border: white solid;
+    align-items: center;
+    justify-content: center
+}
+a{
+    text-decoration: none;
+    color:rgb(66, 66, 238)
+}
+a:hover{
+    color: darkviolet;
+}
+
+.name{
+    padding-left: 10px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: seashell;
+    
 }
