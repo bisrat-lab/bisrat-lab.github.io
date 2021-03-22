@@ -3,8 +3,14 @@
 "use strict";
 
 function pow(x, n) {
-	return x ** n;
+	let result=1;
+	for(let i=0; i<n;i++){
+		result*=x;
+	}
+	return result;
 }
+
+
 
 function add2(n1, n2) {
 	return n1 + n2;
