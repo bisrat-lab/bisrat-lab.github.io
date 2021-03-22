@@ -36,8 +36,19 @@ function add(...args) {
 	0 - 59   NC
 */
 function computeGrade(grades) {
-	let answer = 'A';
-
+	let answer = '';
+	if(grades[0] == 90){
+		answer = 'A';
+	}else if(grades[0]==80){
+		answer = 'B';
+	}else if(grades[0]==70){
+		answer = 'C';
+	}else if(grades[0]==60){
+		answer = 'D';
+	}else if(grades[0]==59){
+		answer = 'NC';
+	}
+	
 	return answer;
 }
 
