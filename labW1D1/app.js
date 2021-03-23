@@ -36,19 +36,25 @@ function add(...args) {
 	0 - 59   NC
 */
 function computeGrade(grades) {
-	let answer = '';
-	if(grades[0] == 90){
-		answer = 'A';
-	}else if(grades[0]==80){
-		answer = 'B';
-	}else if(grades[0]==70){
-		answer = 'C';
-	}else if(grades[0]==60){
-		answer = 'D';
-	}else if(grades[0]==59){
-		answer = 'NC';
+	let sum = 0;
+	let avg = 0;
+for(let i=0; i<grades.length; i++){
+	sum+=grades[i];
+}
+	avg = sum/grades.length
+	if(avg>= 90){
+		return 'A'
 	}
-	
-	return answer;
+	else if(avg >=80){
+		return 'B';
+	}
+	else if(avg >=70){
+		return 'C'
+	}
+	else if(avg >=60){
+		return 'D'
+	}else{
+		return 'NC'
+	}
 }
 
