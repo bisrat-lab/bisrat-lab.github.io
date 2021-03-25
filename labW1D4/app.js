@@ -48,15 +48,20 @@ function ArrayDemo(array) {
 }
 
 // Makes all negative numbers of the input array positive
-function makePositive(array) {
-	let newArr = [];
-	for(let i=0; i< array.length; i++){
-		if(array[i] < 0){	
-			newArr.push(Math.abs(array[i]))
-		}else{
-			newArr.push(array[i])
-		}
-	}
+// function makePositive(arr){
+// 	let newArr = [];
+// 	arr.filter(function(a){
+// 		if(a < 0){
+// 			newArr.push(Math.abs(a))
+// 		}else{
+// 			newArr.push(a)
+// 		}
+// 	})
+// 	return newArr;
+// }
+function makePositive(arr){
+	let newArr =[];
+	arr.filter(a => (a < 0 ? newArr.push(Math.abs(a)) : newArr.push(a)))
 	return newArr
 }
 //console.log(makePositive([-1, 2, "a", 3, -4, -5]))
