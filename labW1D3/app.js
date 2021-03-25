@@ -49,11 +49,27 @@ function Person(name, country, grades) {
 
 
 function analyzer() {
-	return{
-		numProperties: function(){		
-			return Object.keys(Person).length;	
-			}	
+
+	let ShortName = 0
+	let cntObj =0;
+    let output ={};
+	output.numProperties = Object.keys(this).length
+
+	for(let e of Object.keys(this)){
+		if(e.length < 3){
+			ShortName++;
+		}
 	}
+	output.cntShortName = ShortName;
+
+	for(let e of Object.values(this)){
+		if(typeof (e) === "object"){
+			cntObj++;
+		}
+	}
+	output.cntReference = cntObj
+  
+	return output;
 			
 	}           
 	

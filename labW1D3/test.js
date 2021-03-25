@@ -29,8 +29,8 @@ function mochaTests() {
 			person.x = 0;			// name too short
 			let analysis = person.f();
             assert.equal(analysis.numProperties, 6);
-			//assert.equal(analysis.cntShortName, 2);
-			//assert.equal(analysis.cntReference, 1);	// the grades array is a reference.
+			assert.equal(analysis.cntShortName, 2);
+			assert.equal(analysis.cntReference, 1);	// the grades array is a reference.
         });
 	});	
 	
