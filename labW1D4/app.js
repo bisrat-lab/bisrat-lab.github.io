@@ -23,12 +23,16 @@ function removeEvenCharacters(string) {
 // Sum the numbers that are greater than zero of array, e.g. sumPositiveNumbers([-1,4,5,-2,-3,10]) === 19
 // Must use the reduce method of the Array object to do this!!!
 function sumPositiveNumbers(array) {
-	let sumOfPostives = array.filter(v => v > 0);
-    let sum= 0;
-	for(let i of sumOfPostives){
-		sum+=i
+	let sum =0;
+	
+	let postives = array.filter(v => v > 0);
+	if(postives.length === 0){
+		return 0
 	}
-	return sum
+     sum = postives.reduce(function(total, num){
+		return total + num
+	})
+	return sum;
 }
 //console.log(sumPositiveNumbers([-1,4,5,-2,-3,10]))
 
