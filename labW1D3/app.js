@@ -51,7 +51,7 @@ function Person(name, country, grades) {
 function analyzer() {
 	return{
 		numProperties: function(){		
-			return 6;	
+			return Object.keys(Person).length;	
 			}	
 	}
 			
