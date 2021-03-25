@@ -56,5 +56,5 @@ function analyzer() {
 	}
 			
 	}           
-console.log(.numProperties);		
+	
 			
