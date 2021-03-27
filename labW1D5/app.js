@@ -28,10 +28,13 @@ function countSubstring(s, target) {
 
 // Save obj in localStorage
 function saveInLocalStorage(name, obj) {
+   return localStorage.setItem(name, JSON.stringify(obj))
 }
 
 // Return value of name in local storage
 function getFromLocalStorage(name) {
+    let getObj = localStorage.getItem(name, "X")
+    return [getObj], JSON.parse(getObj)
 }
 
 // This function has an unbounded this. When it is called, the this will be bound to some object
@@ -39,7 +42,13 @@ function getFromLocalStorage(name) {
 // It can be any key/value pair
 // addMissProperty tests the object bound to its "this" for the key of "obj" (e.g., location)
 // If the bound object doesn't have that key then the key and its value is added to the bound object.
-function addMissingProperty(obj) {
+function addMissingProperty(obj){
+    let key = Object.keys(obj);
+    for (let element of key) {
+        if (!(element in this)) {
+            this[key] = obj[key];
+        }       
+    }  
 }
 
 // Constructor function which creates object {name:name, country:country, creationData:...}
@@ -62,18 +71,14 @@ let myMap = new Map();
    return myMap.set(students[0],0), myMap.set(students[1],0)
    
 }
-// let students = [{name:"bob", country:"usa"}, {name:"jill", country:"usa"}];
-// let course = register(students);
-// course.get()
-
-
 
 // Parameters:
 // course is a Map mapping student objects to an integer which is the number of days missed
 // student is an object that can be used as a key to course.
 // This function increments the number of days missed for the student.
 function incrementAbsences(course, student) {
-
+      let stu = course.get(student)
+      course.set(student,++stu)
 }
 
 
