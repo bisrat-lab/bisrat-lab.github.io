@@ -12,19 +12,6 @@ Creates an object that contains the following information from the "this" object
 	cntReferences	// count of reference properties (use the typeof operator to compute this)
 }	
 */
-// function analyzer() {
-// 	return{
-// 		numProperties: function(){
-			 
-// 			let num = Object.keys(Person).length;
-// 			return num;	
-// 			}	
-// 	}
-			
-// 	}
-	
-
-
 /* Constructor for a person object
 	Person(name, country, grades) creates object
 	{
