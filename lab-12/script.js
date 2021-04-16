@@ -29,7 +29,16 @@ class Clock {
     }
 }
 
-//class Student {
+// • Question 2:
+// • Create an object student using class syntax which has
+// • Properties: firstName:String, lastName:String, grades: Array
+// • Methods:
+// • inputNewGrade(newGrade): push newGrade to grades
+// • computeAverageGrade(): return average of grades
+// • Create an Array with multiple students
+// • Then compute the average grade for all students in the array
+
+class Student {
 constructor(firstName, lastName, grades = []) {
 this.firstName = firstName;
 this.lastName = lastName;
